@@ -164,7 +164,7 @@ public:
 private:
   // the fts index and the doc word table are complemented at the same time
   static const int64_t FTS_CONCURRENT_AUX_BUILD_CNT = 2;
-  static const int64_t FTS_MAX_AUTO_PARALLELISM = 8;
+  static const int64_t FTS_MAX_AUTO_PARALLELISM = 4;
   static int build_fts_aux_index_name(
     const ObIndexType type,
     const ObString &index_name,
